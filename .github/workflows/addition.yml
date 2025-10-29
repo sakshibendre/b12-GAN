@@ -8,5 +8,5 @@ jobs:
 
     steps: 
       - run: |
-          result=$(expr 2+2)
-          echo "2+2 = $ result"
+          result=$(expr 2 + 2)
+          echo "2 + 2 = $result"
