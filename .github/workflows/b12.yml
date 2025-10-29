@@ -3,7 +3,8 @@ name: My First Workflow     # Workflow name
 on: push            # Triggered on every push 
  
 jobs: 
-  print
+  print:
     runs-on: ubuntu-latest 
+
     steps: 
       - run: echo "Building the project"
