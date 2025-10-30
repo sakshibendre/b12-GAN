@@ -12,3 +12,17 @@ jobs:
 
       - name: Building
         run: echo "building...."
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Testing
+        run: echo "testing"
+
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deployment
+        run: echo "Deploying..."
+        
