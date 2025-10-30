@@ -11,18 +11,23 @@ jobs:
         uses: actions/checkout@v5
 
       - name: Building
-        run: echo "building...."
+        run: |
+          echo "building...."
+          sleep 10
   test:
     runs-on: ubuntu-latest
 
     steps:
       - name: Testing
-        run: echo "testing"
+        run: |
+          echo "testing"
+          sleep 5
 
   deploy:
     runs-on: ubuntu-latest
 
     steps:
       - name: Deployment
-        run: echo "Deploying..."
-        
+        run: |
+          echo "Deploying..."
+          sleep 5
