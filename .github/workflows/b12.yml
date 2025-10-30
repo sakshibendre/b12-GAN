@@ -3,9 +3,12 @@ name: My First Workflow     # Workflow name
 on: push            # Triggered on every push 
  
 jobs: 
-  print:
+  Build:
     runs-on: ubuntu-latest 
 
     steps: 
-      - name: Testing phase
-        run: echo "testing"
+      - name: Code Checkout Repo
+        uses: actions/checkout@v5
+
+      - name: Building
+        run: echo "building...."
